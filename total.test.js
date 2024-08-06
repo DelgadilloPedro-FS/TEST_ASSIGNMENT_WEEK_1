@@ -9,9 +9,9 @@ describe("Obscure Module Test ", () => {
     })
     test('As a user I want to handle numbers at the upper limit of 16-digit', () => {
         expect(obscure('1234567890123456')).toEqual('************3456')
-      })
+    })
 
-      test('As a user I want to handle numbers at the lower limit of 12 digits', () => {
+    test('As a user I want to handle numbers at the lower limit of 12 digits', () => {
         expect(obscure('999999999999')).toEqual('********9999')
-      })
+    })
 })
