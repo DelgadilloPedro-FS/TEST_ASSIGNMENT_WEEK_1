@@ -11,5 +11,4 @@ const obscure = (ccNumber) => {
 }
 
 
-console.log(obscure('123'))
 module.exports = obscure;
