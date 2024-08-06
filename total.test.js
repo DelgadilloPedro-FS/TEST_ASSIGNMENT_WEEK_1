@@ -5,7 +5,7 @@ describe("Obscure Module Test ", () => {
         expect(obscure('123456789012')).toEqual('********9012')
     })
     test('As a User I want to validate my creditcard length', () => {
-        expect(obscure('123')).toBeFalsy()
+        expect(obscure('123')).toMatch('Invalid Credit Card')
     })
     test('As a user I want to handle numbers at the upper limit of 16-digit', () => {
         expect(obscure('1234567890123456')).toEqual('************3456')

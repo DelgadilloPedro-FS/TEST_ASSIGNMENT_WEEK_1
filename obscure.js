@@ -1,6 +1,6 @@
 const obscure = (ccNumber) => {
     if (ccNumber.length < 12 || ccNumber.length > 16) {
-        return false
+        return 'Invalid Credit Card'
     }
     let obscuredNumber = '';
     for (let i = 0; i < ccNumber.length - 4; i++) {
